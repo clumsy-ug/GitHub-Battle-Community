@@ -1,0 +1,23 @@
+version: '3'
+services:
+  front:
+    container_name: front
+    build:
+      context: ./front/
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./front:/app
+      - /app/node_modules
+    environment:
+      - WATCHPACK_POLLING=true
+    restart: always
+  api:
+    container_name: "back"
+    build:
+      context: ./back/
+    volumes:
+      - ./back:/app
+    ports:
+      - 8000:8000
+    restart: always
