@@ -12,12 +12,3 @@ services:
     environment:
       - WATCHPACK_POLLING=true
     restart: always
-  api:
-    container_name: "back"
-    build:
-      context: ./back/
-    volumes:
-      - ./back:/app
-    ports:
-      - 8000:8000
-    restart: always
