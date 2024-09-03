@@ -1,4 +1,5 @@
 ﻿# GitHub-Battle
+ [Play in browser](https://github-battle-community.vercel.app/)
 
 <img src="./front/public/githubbattle-home.png">
 
